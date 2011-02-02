@@ -36,63 +36,7 @@ AuthIPC
 
 ########################################
 
-Account
-	Aliases: Account, Acc
-	Usage: Account|Acc <name>|-i <id>
-	Description: Provides Commands to manage/manipulate Accounts. -i 
-
-	SubCommands:
-
-		AddAccount
-			Aliases: Add, A, Create
-			Usage: Account|Acc Add|A|Create <AccountName> <PW> [<Role> [<email> [<clientId>]]]
-			Description: Adds a new account with the given Name and PW and optionally specified Role and ClientId
-
-		DeleteAccount
-			Aliases: Delete, Del
-			Usage: Account|Acc Delete|Del (<AccountName>|-i <id>)  <ConfirmName>
-			Description: Deletes the account with the given name. Type the name twice for confirmation.
-
-		AccountInfo
-			Aliases: Info, I
-			Usage: Account|Acc Info|I (<AccountName>|-i <id>)  
-			Description: Shows information about the given Account.
-
-		SetProp
-			Aliases: SetProp, Set, S
-			Usage: Account|Acc SetProp|Set|S (<AccountName>|-i <id>)  <Property> <Value>
-			Description: Sets the given Account property to the given value.
-
-			SubCommands:
-
-				Email
-					Aliases: Email, Mail
-					Usage: Account|Acc SetProp|Set|S (<AccountName>|-i <id>)  Email|Mail <new@mail.address>
-					Description: Changes the Account's EMail address.
-
-				Pass
-					Aliases: Pass, PW, Password
-					Usage: Account|Acc SetProp|Set|S (<AccountName>|-i <id>)  Pass|PW|Password <pass>
-					Description: Changes the Account's password.
-
-				Role
-					Aliases: Role, R
-					Usage: Account|Acc SetProp|Set|S (<AccountName>|-i <id>)  Role|R <RoleName>
-					Description: Changes the Account's Role.
-
-				SetClientId
-					Aliases: ClientId, C
-					Usage: Account|Acc SetProp|Set|S (<AccountName>|-i <id>)  ClientId|C <ClientId>
-					Description: Changes the Account's ClientId.
-
-		AccountList
-			Aliases: List, L
-			Usage: Account|Acc List|L <name-part>
-			Description: Lists all accounts whose name contains the given string. (Max: 100)
-
-########################################
-
-Realmsommand
+Realms
 	Aliases: Realm, Realms
 	Usage: Realm|Realms 
 	Description: 
@@ -108,41 +52,6 @@ Realmsommand
 			Aliases: Delete, Del, D
 			Usage: Realm|Realms Delete|Del|D <name or number>
 			Description: 
-
-########################################
-
-Dev
-	Aliases: Dev
-	Usage: Dev 
-	Description: 
-
-	SubCommands:
-
-		NetworkToggle
-			Aliases: Network
-			Usage: Dev Network 
-			Description: 
-
-########################################
-
-Debug
-	Aliases: Debug
-	Usage: Debug 
-	Description: Provides Debug-capabilities and management of Debug-tools for Devs.
-
-	SubCommands:
-
-		GC
-			Aliases: GC
-			Usage: Debug GC 
-			Description: Don't use this unless you are well aware of the stages and heuristics involved in the GC process!
-
-########################################
-
-ServerStats
-	Aliases: Stats
-	Usage: Stats 
-	Description: Provides commands to show and manage server-statistics.
 
 ########################################
 
@@ -255,6 +164,97 @@ Ban
 			Aliases: Lift, Remove, Delete, Del
 			Usage: Bans|Ban Lift|Remove|Delete|Del <mask>
 			Description: Removes all bans that match the given mask.
+
+########################################
+
+ServerStats
+	Aliases: Stats
+	Usage: Stats 
+	Description: Provides commands to show and manage server-statistics.
+
+########################################
+
+Dev
+	Aliases: Dev
+	Usage: Dev 
+	Description: 
+
+	SubCommands:
+
+		NetworkToggle
+			Aliases: Network
+			Usage: Dev Network 
+			Description: 
+
+########################################
+
+Debug
+	Aliases: Debug
+	Usage: Debug 
+	Description: Provides Debug-capabilities and management of Debug-tools for Devs.
+
+	SubCommands:
+
+		GC
+			Aliases: GC
+			Usage: Debug GC 
+			Description: Don't use this unless you are well aware of the stages and heuristics involved in the GC process!
+
+########################################
+
+Account
+	Aliases: Account, Acc
+	Usage: Account|Acc <name>|-i <id>
+	Description: Provides Commands to manage/manipulate Accounts. -i 
+
+	SubCommands:
+
+		AddAccount
+			Aliases: Add, A, Create
+			Usage: Account|Acc Add|A|Create <AccountName> <PW> [<Role> [<email> [<clientId>]]]
+			Description: Adds a new account with the given Name and PW and optionally specified Role and ClientId
+
+		DeleteAccount
+			Aliases: Delete, Del
+			Usage: Account|Acc Delete|Del (<AccountName>|-i <id>)  <ConfirmName>
+			Description: Deletes the account with the given name. Type the name twice for confirmation.
+
+		AccountInfo
+			Aliases: Info, I
+			Usage: Account|Acc Info|I (<AccountName>|-i <id>)  
+			Description: Shows information about the given Account.
+
+		SetProp
+			Aliases: SetProp, Set, S
+			Usage: Account|Acc SetProp|Set|S (<AccountName>|-i <id>)  <Property> <Value>
+			Description: Sets the given Account property to the given value.
+
+			SubCommands:
+
+				Email
+					Aliases: Email, Mail
+					Usage: Account|Acc SetProp|Set|S (<AccountName>|-i <id>)  Email|Mail <new@mail.address>
+					Description: Changes the Account's EMail address.
+
+				Pass
+					Aliases: Pass, PW, Password
+					Usage: Account|Acc SetProp|Set|S (<AccountName>|-i <id>)  Pass|PW|Password <pass>
+					Description: Changes the Account's password.
+
+				Role
+					Aliases: Role, R
+					Usage: Account|Acc SetProp|Set|S (<AccountName>|-i <id>)  Role|R <RoleName>
+					Description: Changes the Account's Role.
+
+				SetClientId
+					Aliases: ClientId, C
+					Usage: Account|Acc SetProp|Set|S (<AccountName>|-i <id>)  ClientId|C <ClientId>
+					Description: Changes the Account's ClientId.
+
+		AccountList
+			Aliases: List, L
+			Usage: Account|Acc List|L <name-part>
+			Description: Lists all accounts whose name contains the given string. (Max: 100)
 
 ########################################
 

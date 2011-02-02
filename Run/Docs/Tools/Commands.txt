@@ -26,10 +26,75 @@ Terrain
 
 ########################################
 
-Locale
-	Aliases: Locale, Loc
-	Usage: Locale|Loc 
-	Description: Sets the currently used Locale.
+Dump
+	Aliases: Dump, D
+	Usage: Dump|D 
+	Description: Provides commands to create dump files.
+
+	SubCommands:
+
+		DumpSpells
+			Aliases: Spells, S
+			Usage: Dump|D Spells|S 
+			Description: Dumps all spells
+
+		DumpNPCs
+			Aliases: NPCs
+			Usage: Dump|D NPCs 
+			Description: Dumps all NPCs
+
+		DumpGOs
+			Aliases: GOs
+			Usage: Dump|D GOs 
+			Description: Dumps all Gameobjects
+
+		DumpItems
+			Aliases: Items
+			Usage: Dump|D Items 
+			Description: Dumps all Items
+
+		DumpQuests
+			Aliases: Quests
+			Usage: Dump|D Quests 
+			Description: Dumps all Quests
+
+		DumpATs
+			Aliases: ATs
+			Usage: Dump|D ATs 
+			Description: Dumps all AreaTriggers
+
+		DumpAll
+			Aliases: All
+			Usage: Dump|D All 
+			Description: Dumps all into files
+
+########################################
+
+WP
+	Aliases: WPs
+	Usage: WPs 
+	Description: 
+
+	SubCommands:
+
+		RandomWP
+			Aliases: Random, R
+			Usage: WPs Random|R [<min> [<max> [<mindist> [<maxdist>]]]]
+			Description: 
+
+########################################
+
+RalekSpellStudies
+	Aliases: SpellStudies, ST
+	Usage: SpellStudies|ST 
+	Description: Provides commands to study spells.
+
+	SubCommands:
+
+		StudySpell
+			Aliases: MatchSpellClassMask, MSCM
+			Usage: SpellStudies|ST MatchSpellClassMask|MSCM 
+			Description: Matches spells with the given spell class mask.
 
 ########################################
 
@@ -146,75 +211,10 @@ PacketAnalyzer
 
 ########################################
 
-WP
-	Aliases: WPs
-	Usage: WPs 
-	Description: 
-
-	SubCommands:
-
-		RandomWP
-			Aliases: Random, R
-			Usage: WPs Random|R [<min> [<max> [<mindist> [<maxdist>]]]]
-			Description: 
-
-########################################
-
-RalekSpellStudies
-	Aliases: SpellStudies, ST
-	Usage: SpellStudies|ST 
-	Description: Provides commands to study spells.
-
-	SubCommands:
-
-		StudySpell
-			Aliases: MatchSpellClassMask, MSCM
-			Usage: SpellStudies|ST MatchSpellClassMask|MSCM 
-			Description: Matches spells with the given spell class mask.
-
-########################################
-
-Dump
-	Aliases: Dump, D
-	Usage: Dump|D 
-	Description: Provides commands to create dump files.
-
-	SubCommands:
-
-		DumpSpells
-			Aliases: Spells, S
-			Usage: Dump|D Spells|S 
-			Description: Dumps all spells
-
-		DumpNPCs
-			Aliases: NPCs
-			Usage: Dump|D NPCs 
-			Description: Dumps all NPCs
-
-		DumpGOs
-			Aliases: GOs
-			Usage: Dump|D GOs 
-			Description: Dumps all Gameobjects
-
-		DumpItems
-			Aliases: Items
-			Usage: Dump|D Items 
-			Description: Dumps all Items
-
-		DumpQuests
-			Aliases: Quests
-			Usage: Dump|D Quests 
-			Description: Dumps all Quests
-
-		DumpATs
-			Aliases: ATs
-			Usage: Dump|D ATs 
-			Description: Dumps all AreaTriggers
-
-		DumpAll
-			Aliases: All
-			Usage: Dump|D All 
-			Description: Dumps all into files
+Locale
+	Aliases: Locale, Loc
+	Usage: Locale|Loc 
+	Description: Sets the currently used Locale.
 
 ########################################
 
